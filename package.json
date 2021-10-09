@@ -1,0 +1,48 @@
+{
+  "name": "electron",
+  "version": "1.0.0",
+  "description": "Test Electron JS",
+  "main": "main.js",
+  "scripts": {
+    "watch": "webpack --config webpack.common.js --watch",
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "keywords": [],
+  "author": "German Ordoñez",
+  "license": "MIT",
+  "build": {
+    "appId": "sales-systemv1",
+    "asar": true,
+    "win": {
+      "target": "NSIS",
+      "icon": "src/images/ico.ico"
+    }
+  },
+  "dependencies": {
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "@mui/icons-material": "^5.0.3",
+    "@mui/material": "^5.0.3",
+    "babel-loader": "^8.2.2",
+    "install": "^0.13.0",
+    "npm": "^8.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "electron": "^15.1.2",
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-react": "^7.14.5",
+    "css-loader": "^6.3.0",
+    "electron-builder": "^22.13.1",
+    "electron-reload": "^2.0.0-alpha.1",
+    "sass": "^1.42.1",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.3.0",
+    "webpack": "^5.58.1",
+    "webpack-cli": "^4.9.0"
+  }
+}
