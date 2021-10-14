@@ -25,6 +25,7 @@
     "@emotion/styled": "^11.3.0",
     "@mui/icons-material": "^5.0.3",
     "@mui/material": "^5.0.3",
+    "axios": "^0.23.0",
     "babel-loader": "^8.2.2",
     "install": "^0.13.0",
     "npm": "^8.0.0",

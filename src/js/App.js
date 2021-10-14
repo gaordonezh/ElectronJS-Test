@@ -17,7 +17,9 @@ import {
   IconButton,
   InputAdornment,
   Container,
+  Divider,
 } from "@mui/material";
+import TestApi from "./components/TestApi";
 
 const App = () => {
   const [list, setList] = useState([]);
@@ -104,6 +106,11 @@ const App = () => {
                   </ListItem>
                 )}
               </List>
+            </Grid>
+            <Grid item xs={12} align="center">
+              <Divider />
+              <br />
+              <TestApi />
             </Grid>
           </Grid>
         </Box>
